@@ -37,7 +37,7 @@ def upload_file():
             flash("Not Found ")
             return redirect(request.url)
         if file and allowed_file(file.filename):
-            #危険な文字を削除
+            #remove unsupported letter
             filename = secure_filename(file.filename)
             file.save(os.path.join(UPLOAD_FOLDER, filename))
             filepath = os.path.join(UPLOAD_FOLDER, filename)            
