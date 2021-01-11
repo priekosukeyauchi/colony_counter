@@ -19,7 +19,7 @@ UPLOAD_FOLDER = "uploads"
 ALLOWED_EXTENTIONS = set(["png", "jpg", "jpeg", "gif"])
 
 app = Flask(__name__)
-app.secret_key = "hogehoge"
+app.secret_key = "oooo"
 
 
 def allowed_file(filename):
